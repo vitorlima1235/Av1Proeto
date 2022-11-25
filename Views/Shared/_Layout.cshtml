@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Av1Proeto</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Av1Proeto.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <div class="cont">
+        <h3> "Até os mais fortes fracassam, e os mais jovens ficam cansados. Mas o importante é nunca desistir. Essa é a essência de todas as pessoas verdadeiramente fortes." </h3>
+       
+       </div>
+    </header>
+        <br><br>    
+    <div class="container">
+         
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+  <br><br>   
+    <footer class="border-top footer text-muted">
+        <div class="rodape">
+         <h4>Vitor Lima Nascimento</h4>
+        <h4>Vitorlima150703@gmail.com</h4>
+        <h4>RA:922109361</h4>
+        <div class="containe">
+            &copy; 2022 - Av1Proeto - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </div>
+        
+    </footer>
+  
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
